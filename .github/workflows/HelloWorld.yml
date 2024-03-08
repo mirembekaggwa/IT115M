@@ -1,4 +1,4 @@
-Name: Hello World
+name: Hello World
 
 # Events
 
@@ -18,9 +18,9 @@ on:
 
 jobs: 
   hello: 
-    runs-on ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      - use: actions/checkout@v4
+      - uses: actions/checkout@v4
       - name: Hello
         run: echo "Hello World"
-    shell: bash
+        shell: bash
