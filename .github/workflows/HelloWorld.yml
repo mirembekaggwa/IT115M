@@ -9,9 +9,9 @@ on:
 
   pull_request:
     branches:
-      -main
+      - main
 
-workflow_dispatch:
+  workflow_dispatch:
 
 
 # Workflow / Jobs
@@ -20,7 +20,7 @@ jobs:
   hello: 
     runs-on ubuntu-latest
     steps:
-      -use: actions/checkout@v4
-      -name: Hello
-      run: echo "Hello World"
-      shell: bash
+      - use: actions/checkout@v4
+      - name: Hello
+        run: echo "Hello World"
+    shell: bash
